@@ -3,14 +3,20 @@ function getComputerChoice(){
    let randomNumber = (Math.floor(Math.random() * 100) +1);
    choice = ''
    if (randomNumber <= 33){
-    choice = 'rock'
+    choice = 'Rock'
    }
    else if (randomNumber > 33 && randomNumber <= 66){
-    choice = 'paper'
+    choice = 'Paper'
    }
    else{
-    choice = 'scissor'
+    choice = 'Scissor'
    }
    return choice
 }
-console.log(getComputerChoice())
+console.log(getComputerChoice());
+
+function getHumanChoice(){
+   let humanChoice = prompt('Pick Rock, Paper or Scissors')
+   return humanChoice
+}
+console.log(getHumanChoice())
